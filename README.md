@@ -1,39 +1,43 @@
-# riesgo_relativo #
-El objetivo de este proyecto es encontrar el riesgo relativo dentro de los grupos definidos como 'buenos pagadores' y 'malos pagadores'. Este desarrollo de trabajo partió de una base de datos del banco "super caja" en donde se cuenta con las variables more_90_days_overdue y number_times-delayed_payment_30_59_days.
-El proceso fue el siguiente:
+Aquí tienes la traducción al inglés:
+
+---
+
+# Relative Risk #
+The goal of this project is to find the relative risk within the groups defined as 'good payers' and 'bad payers'. This work started with a database from the bank "Super Caja," which includes the variables `more_90_days_overdue` and `number_times_delayed_payment_30_59_days`.
+
+The process was as follows:
 
 🟦 
-### Procesar y preparar base de datos ###
+### Process and Prepare Database ###
 
-Conectar/importar datos a herramientas, identificar y manejar valores nulos, identificar y manejar valores duplicados , identificar y manejar datos fuera del alcance del análisis , identificar y manejar datos inconsistentes en variables categóricas , identificar y manejar datos discrepantes en variables numéricas , comprobar y cambiar tipo de dato , crear nuevas variables , unir tablas , construir tablas auxiliares.
+Connect/import data into tools, identify and handle missing values, identify and handle duplicate values, identify and handle out-of-scope data, identify and handle inconsistent data in categorical variables, identify and handle outlier data in numerical variables, check and change data types, create new variables, join tables, construct auxiliary tables.
 
-Se verificaron datos null y duplicados. Se pudo observar que del mismo usuario habian varios prestamos, sin embargo no se encontró ningun duplicado.
+Null and duplicate data were checked. It was observed that there were multiple loans for the same user; however, no duplicates were found.
 
-Para los datos null, se tomó dos caminos, para las variables que los datos null representaban mas del 10%, se hizo imputación según su dritribución (a través de un histograma en Google Colab) y si no eran mayores al 10% se dejaron quietos.
+For missing data, two approaches were taken. For variables where missing data represented more than 10%, imputation was performed according to its distribution (using a histogram in Google Colab). If it was less than 10%, the data was left as is.
 
-Para los datos outliers, se tomó dos caminos, para las variables que los datos null representaban mas del 10%, se hizo imputación según su dritribución (a través de un histograma en Google Colab) y se visualizo su comportamiento a través de Boxplots (Google Colab).
+For outliers, two approaches were taken. For variables where outliers represented more than 10%, imputation was performed according to its distribution (using a histogram in Google Colab), and their behavior was visualized through Boxplots (Google Colab).
 
 🟪 
-## Hacer un análisis exploratorio ##
+## Perform Exploratory Analysis ##
 
-Visualización de datos a través de gráficos: Esta técnica nos ayuda a visualizar la distribución y relaciones entre variables como ingresos, edad, deudas y comportamiento de pago de los clientes, proporcionando insights preliminares sobre cómo estas variables podrían influir en el riesgo crediticio.
-Resumen estadístico a través de cálculos de medidas descriptivas: Como calcular la media, mediana, desviación estándar, percentiles, etc., para entender la tendencia central, dispersión y forma de la distribución de los datos crediticios.
+Data visualization through charts: This technique helps us visualize the distribution and relationships between variables such as income, age, debt, and payment behavior of clients, providing preliminary insights into how these variables might influence credit risk.
 
-Análisis de tendencias y patrones: Observar tendencias temporales, estacionales u otros patrones interesantes en los datos, como el comportamiento de pago en diferentes grupos de ingresos o el impacto de la cantidad de dependientes en la capacidad de pago.
+Statistical summary through descriptive statistics calculations: Such as calculating mean, median, standard deviation, percentiles, etc., to understand the central tendency, dispersion, and shape of the distribution of credit data.
 
-Segmentación de datos: Dividir los datos en grupos o segmentos, como diferentes rangos de ingresos o categorías de empleo, para analizarlos por separado y encontrar diferencias significativas en el riesgo crediticio.
+Trend and pattern analysis: Observing temporal, seasonal, or other interesting patterns in the data, such as payment behavior in different income groups or the impact of the number of dependents on payment capacity.
+
+Data segmentation: Dividing data into groups or segments, such as different income ranges or employment categories, to analyze them separately and find significant differences in credit risk.
 
 🟥  
-## Aplicar técnica de análisis ##
+## Apply Analytical Techniques ##
 
-Las técnicas de análisis en el ámbito financiero y crediticio pueden ser muy variadas, y su elección depende del problema específico que se pretende solucionar. En algunos casos, se pueden utilizar distintas técnicas combinadas para llegar a un resultado o profundizar los hallazgos.
-
-Las técnicas de análisis en el ámbito financiero y crediticio pueden ser muy variadas, y su elección depende del problema específico que se pretende solucionar. En algunos casos, se pueden utilizar distintas técnicas combinadas para llegar a un resultado o profundizar los hallazgos.
+Analytical techniques in the financial and credit domain can be quite varied, and their choice depends on the specific problem to be solved. In some cases, different techniques can be combined to reach a result or deepen findings.
 
 🟧 
-## Resumir información en un dashboard ##
+## Summarize Information in a Dashboard ##
 
-Un dashboard es una herramienta de visualización de datos esencial que proporciona una representación gráfica y resumida de información relevante, en este caso, relacionada con el riesgo crediticio de los clientes del banco.
+A dashboard is an essential data visualization tool that provides a graphical and summarized representation of relevant information, in this case, related to the credit risk of the bank's clients.
 
 ![image](https://github.com/user-attachments/assets/a914759f-5b5c-4325-a400-aa9b867b3998)
 
