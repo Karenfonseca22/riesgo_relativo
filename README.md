@@ -43,7 +43,7 @@ In the Q1 subgroup, which would represent the exposed group of bad payers, divid
 
 ![image](https://github.com/user-attachments/assets/7e1806fa-b69b-4b14-985d-336408871e60)
 
-### Resultados de tecnica ###
+### Relative risk results ###
 
 - rr.using_lines_not_secured
 
