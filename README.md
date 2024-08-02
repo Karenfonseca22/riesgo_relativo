@@ -1,6 +1,3 @@
-Aquí tienes la traducción al inglés:
-
----
 
 # Relative Risk #
 The goal of this project is to find the relative risk within the groups defined as 'good payers' and 'bad payers'. This work started with a database from the bank "Super Caja," which includes the variables `more_90_days_overdue` and `number_times_delayed_payment_30_59_days`.
