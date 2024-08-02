@@ -16,7 +16,7 @@ For missing data, two approaches were taken. For variables where missing data re
 For outliers, two approaches were taken. For variables where outliers represented more than 10%, imputation was performed according to its distribution (using a histogram in Google Colab), and their behavior was visualized through Boxplots (Google Colab).
 
 🟪 
-## Perform Exploratory Analysis ##
+### Perform Exploratory Analysis ###
 
 Data visualization through charts: This technique helps us visualize the distribution and relationships between variables such as income, age, debt, and payment behavior of clients, providing preliminary insights into how these variables might influence credit risk.
 
@@ -30,7 +30,7 @@ Data segmentation: Dividing data into groups or segments, such as different inco
 ![image](https://github.com/user-attachments/assets/582a5f2e-4fbc-4aad-8eda-c39cd195d07b)
 
 🟥  
-## Apply Analytical Techniques ##
+### Apply Analytical Techniques ###
 
 Analytical techniques in the financial and credit domain can be quite varied, and their choice depends on the specific problem to be solved. In some cases, different techniques can be combined to reach a result or deepen findings.
 
@@ -78,15 +78,15 @@ In the Q1 subgroup, which would represent the exposed group of bad payers, divid
 
 
 🟧 
-## Summarize Information in a Dashboard ##
+### Summarize Information in a Dashboard ###
 
 A dashboard is an essential data visualization tool that provides a graphical and summarized representation of relevant information, in this case, related to the credit risk of the bank's clients.
 
 ![image](https://github.com/user-attachments/assets/a914759f-5b5c-4325-a400-aa9b867b3998)
 
-Link de dashboard interactivo [riesgo_relativo]([https://lookerstudio.google.com/reporting/2a8c55ed-4abb-4fd2-bb19-fa7c2a46c9b7])
+Link de dashboard interactivo [riesgo_relativo](https://lookerstudio.google.com/reporting/2a8c55ed-4abb-4fd2-bb19-fa7c2a46c9b7).
 
----
+-----------
 
 ### Hypothesis Validation ###
 - Younger individuals have a higher risk of default.
