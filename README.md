@@ -34,6 +34,49 @@ Data segmentation: Dividing data into groups or segments, such as different inco
 
 Analytical techniques in the financial and credit domain can be quite varied, and their choice depends on the specific problem to be solved. In some cases, different techniques can be combined to reach a result or deepen findings.
 
+---
+
+The relative risk technique can be found at this link: https://www.youtube.com/watch?v=df4ePYdNGBY&t=149s
+
+In the Q1 subgroup, which would represent the exposed group of bad payers, divide this by the sum of the non-exposed group (Q2, Q3, Q4) of both good and bad payers. Then divide the incidence rates to create the relative risk.
+
+---
+
+![image](https://github.com/user-attachments/assets/687273b8-d4fc-45ea-9285-ed9ad107d26f)
+
+![image](https://github.com/user-attachments/assets/7e1806fa-b69b-4b14-985d-336408871e60)
+
+### Resultados de tecnica ###
+
+- rr.using_lines_not_secured
+
+![image](https://github.com/user-attachments/assets/8bc58fc0-8abb-40f8-a869-d8db5d7a4bda)
+
+- rr_age
+
+![image](https://github.com/user-attachments/assets/e62df8b5-c0b0-4d8d-913b-3be15c32ab33)
+
+- rr_debt_ratio
+
+![image](https://github.com/user-attachments/assets/bffc4d61-aaa5-43a5-8ae0-40d8453c7897)
+
+-- rr_delayed_30_59
+
+![image](https://github.com/user-attachments/assets/ce097de5-3702-4e4b-9df6-ba3f2f4084bb)
+
+-- rr_last_month_salary
+
+![image](https://github.com/user-attachments/assets/617c5ff9-15ae-4cb4-828c-7a356b22ae84)
+
+-- rr_more_90_days_overdue
+
+![image](https://github.com/user-attachments/assets/5a7b00e4-d5a8-440c-befc-d08e0af49142)
+
+-- rr_number_dependents
+
+![image](https://github.com/user-attachments/assets/f0a551b6-31ea-4126-8db4-254aae9101db)
+
+
 🟧 
 ## Summarize Information in a Dashboard ##
 
@@ -42,15 +85,19 @@ A dashboard is an essential data visualization tool that provides a graphical an
 ![image](https://github.com/user-attachments/assets/a914759f-5b5c-4325-a400-aa9b867b3998)
 
 
-### Validación de hipotesis ###
-- Los más jóvenes tienen un mayor riesgo de impago.
+Aquí tienes la traducción al inglés:
 
-_Esta hiposis es **verdadera**, el riesgo relativo del grupo mas joven es de 2.3238948510878_
+---
 
-- Las personas con más cantidad de préstamos activos tienen mayor riesgo de ser malos pagadores.
+### Hypothesis Validation ###
+- Younger individuals have a higher risk of default.
 
-_Esta hiposis es **verdadera**, el riesgo relativo de number_ times_ delayed_ payment_ loan_ 30_ 59_ days es de 31.502429430819063_
+_This hypothesis is **true**; the relative risk for the youngest group is 2.3238948510878._
 
-- Las personas que han retrasado sus pagos por más de 90 días tienen mayor riesgo de ser malos pagadores.
+- People with a higher number of active loans have a greater risk of being bad payers.
 
-_Esta hiposis es **verdadera**, el riesgo relativo de more_90_days_overdue es de 46.289284061611689_
+_This hypothesis is **true**; the relative risk for `number_times_delayed_payment_loan_30_59_days` is 31.502429430819063._
+
+- People who have delayed payments by more than 90 days have a higher risk of being bad payers.
+
+_This hypothesis is **true**; the relative risk for `more_90_days_overdue` is 46.289284061611689._
