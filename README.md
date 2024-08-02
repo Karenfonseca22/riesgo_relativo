@@ -26,6 +26,9 @@ Trend and pattern analysis: Observing temporal, seasonal, or other interesting p
 
 Data segmentation: Dividing data into groups or segments, such as different income ranges or employment categories, to analyze them separately and find significant differences in credit risk.
 
+
+![image](https://github.com/user-attachments/assets/582a5f2e-4fbc-4aad-8eda-c39cd195d07b)
+
 🟥  
 ## Apply Analytical Techniques ##
 
