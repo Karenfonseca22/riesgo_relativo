@@ -1,5 +1,10 @@
 
 # Relative Risk #
+
+**CASE**
+
+In the recent context, the decrease in market interest rates has triggered a notable increase in the demand for credit applications. Customers see a favorable opportunity to finance major purchases or consolidate existing debts, leading to an influx of loan applications at the bank 'Super Caja.
+
 The goal of this project is to find the relative risk within the groups defined as 'good payers' and 'bad payers'. This work started with a database from the bank "Super Caja," which includes the variables `more_90_days_overdue` and `number_times_delayed_payment_30_59_days`.
 
 The process was as follows:
