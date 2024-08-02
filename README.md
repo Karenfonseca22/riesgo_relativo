@@ -84,8 +84,7 @@ A dashboard is an essential data visualization tool that provides a graphical an
 
 ![image](https://github.com/user-attachments/assets/a914759f-5b5c-4325-a400-aa9b867b3998)
 
-
-Aquí tienes la traducción al inglés:
+Link de dashboard interactivo [riesgo_relativo]([https://www.figma.com/design/HdDJZUsz1jTfMQA652JmdI/Hip%C3%B3tesis-Proyecto-2?node-id=0-1&t=3Nh8eGoVWkRmncUO-1](https://lookerstudio.google.com/reporting/2a8c55ed-4abb-4fd2-bb19-fa7c2a46c9b7).
 
 ---
 
