@@ -1,18 +1,21 @@
+from google.colab import auth
+from google.cloud import bigquery
 import pandas as pd
-## IMPORTAR UNA NUEVA TABLA DESDE BIGQUERY
+import IPython
 
-# Reemplaza con tu ID de proyecto y el nombre de la nueva tabla
-project_id = 'riesgo-relativo-429614'  # Asegúrate de que este sea tu ID de proyecto real
-dataset_id = 'Dataset'  # Nombre del conjunto de datos
-new_table_id = 'tabla_general'  # Nombre de la nueva tabla
+# Autenticar en Google Colab
+auth.authenticate_user()
 
-# Define the table ID to be used in the query
-general_table_id = new_table_id # Assign the value of new_table_id to flag_table_id
+# Crear un cliente de BigQuery
+client = bigquery.Client(project="datalab-431915")
 
-# Consulta SQL para seleccionar los datos de la nueva tabla
-general_query = f'SELECT * FROM `{project_id}.{dataset_id}.{general_table_id}`'
+# Consulta a BigQuery
+query = f"""
+SELECT * FROM `{"datalab-431915"}.{"Amazon_sales"}.{"amazon_product_clean"}`
+"""
+#SELECT * FROM `{"laboratoria2"}.{"datos_hipotesis"}.{"view_unificado"}`
 
-# Cargar los datos de la nueva tabla en un nuevo DataFrame
-general_df = pd.read_gbq(general_query, project_id=project_id)
+# Obtener todos los registros de la consulta y convertirlos en un DataFrame de Pandas
+df = client.query(query).to_dataframe()
 
-# Ahora new_df contiene los datos de la nueva tabla en un DataFrame
+IPython.display.display(df)
