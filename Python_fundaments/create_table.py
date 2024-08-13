@@ -7,11 +7,11 @@ import IPython
 auth.authenticate_user()
 
 # Crear un cliente de BigQuery
-client = bigquery.Client(project="datalab-431915")
+client = bigquery.Client(project="idproyecto-1234")
 
 # Consulta a BigQuery
 query = f"""
-SELECT * FROM `{"datalab-431915"}.{"Amazon_sales"}.{"amazon_product_clean"}`
+SELECT * FROM `{"iddeproyecto"}.{"nombre_dataset"}.{"nombre_tabla_o_vista"}`
 """
 #SELECT * FROM `{"laboratoria2"}.{"datos_hipotesis"}.{"view_unificado"}`
 
